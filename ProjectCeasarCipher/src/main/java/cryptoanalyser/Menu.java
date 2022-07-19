@@ -18,6 +18,7 @@ public class Menu {
     private boolean isExit = false;
     private int userKey;
 
+
     public Menu() {
         entries.add(new MenuEntry("Encryption") {
             @Override
@@ -50,6 +51,8 @@ public class Menu {
                     writeToFile(encryptFile, str.toString());
                 } catch (IOException e) {
                     System.out.println("\nPlease use correct file name\n");
+                    inputFile = "input.txt";
+                    encryptFile = "encrypt.txt";
                     run();
                 }
             }
@@ -85,6 +88,7 @@ public class Menu {
                     writeToFile(decryptFile, str.toString());
                     System.out.println("Default decrypt file in project directory: decrypt.txt \n");
                 } catch (IOException e) {
+                    encryptFile = "encrypt.txt";
                     System.out.println("\nPlease use correct file name\n");
                     run();
                 }
@@ -113,6 +117,7 @@ public class Menu {
                     writeToFile(decryptFile, stringBuilder.toString());
                     System.out.println("Default decrypt file in project directory: decrypt.txt \n");
                 } catch (IOException e) {
+                    encryptFile = "encrypt.txt";
                     System.out.println("\nPlease use correct file name\n");
                     run();
                 }
@@ -149,6 +154,8 @@ public class Menu {
                     writeToFile(decryptFile, stringBuilder.toString());
                     System.out.println("Default decrypt file in project directory: decrypt.txt \n");
                 } catch (IOException e) {
+                    dictionary = "dictionary.txt";
+                    encryptFile = "encrypt.txt";
                     System.out.println("\nPlease use correct file name\n");
                     run();
                 }
