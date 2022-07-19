@@ -49,7 +49,6 @@ public class Menu {
                     }
                     writeToFile(encryptFile, str.toString());
                 } catch (IOException e) {
-                    e.printStackTrace();
                     System.out.println("\nPlease use correct file name\n");
                     run();
                 }
@@ -86,7 +85,6 @@ public class Menu {
                     writeToFile(decryptFile, str.toString());
                     System.out.println("Default decrypt file in project directory: decrypt.txt \n");
                 } catch (IOException e) {
-                    e.printStackTrace();
                     System.out.println("\nPlease use correct file name\n");
                     run();
                 }
@@ -115,7 +113,6 @@ public class Menu {
                     writeToFile(decryptFile, stringBuilder.toString());
                     System.out.println("Default decrypt file in project directory: decrypt.txt \n");
                 } catch (IOException e) {
-                    e.printStackTrace();
                     System.out.println("\nPlease use correct file name\n");
                     run();
                 }
