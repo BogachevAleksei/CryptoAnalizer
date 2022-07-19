@@ -123,7 +123,6 @@ public class Menu {
         });
 
         entries.add(new MenuEntry("Decryption by Statistical Analysis of Russian characters") {
-
             @Override
             public void run() {
                 Scanner consoleScanner = new Scanner(System.in);
